@@ -1,10 +1,12 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, FlatList, Image, StyleSheet } from 'react-native';
+import { Asset } from 'expo-asset';
+const asset = Asset.fromModule(require('../../images/psicologo.png'));
 
 const psychologistsData = [
-  { id: '1', name: 'Psicólogo 1', specialization: 'Especialização 1', image: require('../../images/psicologo.png') },
-  { id: '2', name: 'Psicólogo 2', specialization: 'Especialização 2', image: require('../../images/psicologo.png') },
-  { id: '3', name: 'Psicólogo 3', specialization: 'Especialização 3', image: require('../../images/psicologo.png') },
+  { id: '1', name: 'Psicólogo 1', specialization: 'Especialização 1', image: asset },
+  { id: '2', name: 'Psicólogo 2', specialization: 'Especialização 2', image: asset },
+  { id: '3', name: 'Psicólogo 3', specialization: 'Especialização 3', image: asset },
   // Adicione mais psicólogos aqui
 ];
 
